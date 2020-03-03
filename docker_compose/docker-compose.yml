@@ -11,4 +11,6 @@ services:
         TERRAFORM_VERSION: ${TERRAFORM_VERSION}
     volumes:
       - .:/project
+    env_file: 
+      - credentials.env
     command: ["/bin/bash"]

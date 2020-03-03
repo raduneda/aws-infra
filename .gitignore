@@ -1,3 +1,4 @@
 credentials.env
 stage.env
 prod.env
+.terraform

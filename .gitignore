@@ -4,3 +4,4 @@ prod.env
 .terraform
 id_rsa*
 terraform.*
+!terraform.tfvars

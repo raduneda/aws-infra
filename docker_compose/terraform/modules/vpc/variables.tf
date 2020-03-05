@@ -9,20 +9,13 @@ variable "vpc_cidr" {
 
 variable "subnet_pub" {
   type = list
-  default = [
-    {
-      cidr = "10.12.10.0/24"
-      az   = "eu-west-1a"
-    }
-  ]
+}
+
+variable "subnet_priv" {
+  type = list
 }
 
 variable "enable_dns_hostnames" {
   type = bool
   default = true
-}
-
-variable "map_public_ip_on_launch" {
-  type = bool
-  default = false
 }

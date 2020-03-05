@@ -11,6 +11,7 @@ resource "aws_subnet" "custom_subnet_pub" {
   vpc_id            = aws_vpc.custom_vpc.id
   cidr_block        = lookup(var.subnet_pub[0], "cidr")
   availability_zone = lookup(var.subnet_pub[0], "az")
+  map_public_ip_on_launch = var.map_public_ip_on_launch 
 
   tags = {
     Name = "${var.name}-subnet-pub"

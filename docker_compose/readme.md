@@ -1,4 +1,5 @@
 ### Running example
+* generate ssh keys for .ssh usign readme from .ssh
 * docker-compose build aws-infra
 * docker-compose run aws-infra
 
